@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jaime Castillo Colombás · Finance &amp; Data</title>
+<meta name="description" content="Jaime Castillo Colombás: Business Administration + Business Analytics student at ICADE (Comillas, Madrid). Search fund analyst, credit risk at PwC, and builder of data and finance tools.">
+<link rel="canonical" href="https://jaimecastillocolombas.github.io/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Jaime Castillo Colombás · Finance &amp; Data">
+<meta property="og:description" content="ICADE Business + Analytics student. Search funds, credit risk and data tools: a self-updating macro dashboard and an offline clinical app used by an NGO in Cambodia.">
+<meta property="og:url" content="https://jaimecastillocolombas.github.io/">
+<meta property="og:image" content="https://jaimecastillocolombas.github.io/assets/rates.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Jaime Castillo Colombás",
+  "url": "https://jaimecastillocolombas.github.io/",
+  "jobTitle": "Business Administration and Business Analytics student",
+  "alumniOf": [
+    {"@type": "CollegeOrUniversity", "name": "ICADE, Universidad Pontificia Comillas"},
+    {"@type": "CollegeOrUniversity", "name": "UCLouvain, Louvain School of Management"}
+  ],
+  "address": {"@type": "PostalAddress", "addressLocality": "Madrid", "addressCountry": "ES"},
+  "knowsLanguage": ["es", "en"],
+  "sameAs": [
+    "https://www.linkedin.com/in/jaime-castillo-204a28293",
+    "https://github.com/jaimecastillocolombas"
+  ]
+}
+</script>
+<style>
+  :root {
+    --bg: #f6f7f9; --card: #ffffff; --text: #16181d; --muted: #5b616e; --line: #e1e4ea;
+    --accent: #2a78d6; --accent-soft: #e8f0fb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f1116; --card: #181b21; --text: #eceef1; --muted: #a2a8b4; --line: #2a2e36;
+      --accent: #5b9cf0; --accent-soft: #1c2a3d;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f1116; --card: #181b21; --text: #eceef1; --muted: #a2a8b4; --line: #2a2e36;
+    --accent: #5b9cf0; --accent-soft: #1c2a3d;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.6 Inter, system-ui, sans-serif;
+  }
+  main { max-width: 960px; margin: 0 auto; padding: 56px 20px 72px; }
+  h1, h2 { font-family: "Source Serif 4", Georgia, serif; line-height: 1.2; margin: 0; }
+  h1 { font-size: clamp(2rem, 5vw, 2.9rem); }
+  h2 { font-size: 1.5rem; margin: 56px 0 18px; }
+  h3 { font-size: 1.05rem; margin: 0; }
+  a { color: var(--accent); }
+  p { margin: 0 0 12px; }
+  .muted { color: var(--muted); }
+  .lead { font-size: 1.15rem; max-width: 46rem; margin-top: 14px; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 6px; padding: 9px 16px; border-radius: 999px;
+    border: 1px solid var(--line); background: var(--card); color: var(--text);
+    text-decoration: none; font-weight: 500; font-size: 0.95rem;
+  }
+  .btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    box-shadow: 0 1px 3px rgba(16, 24, 40, 0.06);
+  }
+  .project { display: grid; grid-template-columns: 1.15fr 1fr; overflow: hidden; margin-bottom: 20px; }
+  .project img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+  .project .shot { background: var(--accent-soft); border-right: 1px solid var(--line); }
+  .project.phone .shot { display: flex; justify-content: center; align-items: flex-start; padding: 24px 0 0; }
+  .project.phone img { width: 210px; height: 340px; border-radius: 18px 18px 0 0; border: 1px solid var(--line); }
+  .project .body { padding: 24px; }
+  .tag {
+    display: inline-block; font-size: 0.78rem; font-weight: 600; color: var(--accent);
+    background: var(--accent-soft); padding: 2px 10px; border-radius: 999px; margin-bottom: 10px;
+  }
+  .project ul { padding-left: 18px; margin: 10px 0 16px; }
+  .project li { margin-bottom: 4px; }
+  .stack { font-size: 0.85rem; color: var(--muted); margin-bottom: 14px; }
+  .row { display: flex; gap: 10px; flex-wrap: wrap; }
+  .timeline .item { padding: 18px 22px; margin-bottom: 12px; }
+  .item-head { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .when { color: var(--muted); font-size: 0.9rem; white-space: nowrap; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .grid2 .card { padding: 18px 22px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  .chip { font-size: 0.85rem; padding: 3px 10px; border: 1px solid var(--line); border-radius: 999px; }
+  footer { margin-top: 64px; font-size: 0.85rem; color: var(--muted); }
+  @media (max-width: 720px) {
+    main { padding-top: 36px; }
+    .project, .grid2 { grid-template-columns: 1fr; }
+    .project .shot { border-right: 0; border-bottom: 1px solid var(--line); max-height: 260px; overflow: hidden; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="muted">Madrid, Spain</p>
+    <h1>Jaime Castillo Colombás</h1>
+    <p class="lead">Business Administration + Business Analytics student at ICADE (Comillas). I work where
+      finance meets data: screening and modelling acquisitions at a search fund, credit risk at PwC,
+      and building tools that people actually use.</p>
+    <p class="muted">Looking for summer 2027 and off-cycle internships (from September 2027) in investment banking, private equity, fintech and consulting.</p>
+    <nav class="links">
+      <a class="btn primary" href="https://www.linkedin.com/in/jaime-castillo-204a28293">LinkedIn</a>
+      <a class="btn" href="https://github.com/jaimecastillocolombas">GitHub</a>
+      <a class="btn" href="#projects">Projects</a>
+    </nav>
+  </header>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <article class="card project">
+      <div class="shot"><img src="assets/rates.png" alt="Rates and bonds page of the macro dashboard: US and euro area yield curves"></div>
+      <div class="body">
+        <span class="tag">Finance · Data engineering</span>
+        <h3>Macro Regime Dashboard</h3>
+        <ul>
+          <li>Self-updating dashboard of rates, bonds, inflation, risk and markets for the US, the euro area and Spain, from the Fed, ECB and INE.</li>
+          <li>Stores <em>when</em> each value became public, so the regime-rotation strategy it feeds can be backtested without look-ahead bias.</li>
+          <li>Nightly pipeline on GitHub Actions into Postgres, 74 automated tests, live news tagged by topic.</li>
+        </ul>
+        <p class="stack">Python · pandas · SQLAlchemy · Postgres · Streamlit · Plotly · GitHub Actions</p>
+        <div class="row">
+          <a class="btn primary" href="https://macro-regime-dashboard-student.streamlit.app">Live demo</a>
+          <a class="btn" href="https://github.com/jaimecastillocolombas/macro-regime-dashboard">Code</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card project phone">
+      <div class="shot"><img src="assets/sauce-patients.png" alt="SAUCE app on a phone: patient list (demo data)"></div>
+      <div class="body">
+        <span class="tag">Product · In real use</span>
+        <h3>SAUCE: clinical records for an NGO in Cambodia</h3>
+        <ul>
+          <li>Offline-first web app that replaced paper and loose spreadsheets for a medical team working with children in areas with patchy connectivity.</li>
+          <li>Patient records, appointments and medication with end-of-treatment alerts; checklists and drug catalogue configurable without code.</li>
+          <li>Designed and iterated with a volunteer doctor; deployed and maintained by me. Next: multi-tenant version with authentication and roles.</li>
+        </ul>
+        <p class="stack">HTML · CSS · JavaScript · Service Worker · PWA · Netlify</p>
+        <div class="row">
+          <a class="btn primary" href="https://sauce2.netlify.app">Live app</a>
+          <a class="btn" href="https://github.com/jaimecastillocolombas/sauce">Code</a>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section class="timeline">
+    <h2>Experience</h2>
+    <div class="card item">
+      <div class="item-head"><h3>Memorable Capital · Search Fund Analyst Intern</h3><span class="when">Sep – Dec 2026</span></div>
+      <p class="muted">Screening acquisition targets against the fund's criteria, analysing their financials, building LBO models with different capital structures, qualifying owners by phone and preparing investment presentations.</p>
+    </div>
+    <div class="card item">
+      <div class="item-head"><h3>PwC · Credit Risk Intern</h3><span class="when">Jun – Jul 2026</span></div>
+      <p class="muted">Credit risk audit for a Spanish bank: validation routines in SAS, review automation with VBA, and methodology documentation for PD, LGD and ECL models (IFRS 9).</p>
+    </div>
+    <div class="card item">
+      <div class="item-head"><h3>Factory Colchón · Finance Intern</h3><span class="when">Jun – Jul 2025</span></div>
+      <p class="muted">Market and business analysis and reports for the CFO on process optimisation and organisational structure.</p>
+    </div>
+    <div class="card item">
+      <div class="item-head"><h3>Comillas Solidaria · Volunteer instructor, "Economía para tu Autonomía"</h3><span class="when">Sep 2024 – May 2026</span></div>
+      <p class="muted">Personal finance workshops for families at risk of social exclusion.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="grid2">
+      <div class="card">
+        <h3>ICADE, Universidad Pontificia Comillas</h3>
+        <p class="muted">Business Administration + Business Analytics (E2+Analytics) · 2023 – 2028</p>
+      </div>
+      <div class="card">
+        <h3>Exchange programmes</h3>
+        <p class="muted">Emory University, Goizueta Business School (BBA) · Spring 2027<br>UCLouvain, Louvain School of Management · Sep 2025 – Jan 2026<br>Westview High School, Vancouver · 2021/22</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="grid2">
+      <div class="card">
+        <h3>Finance</h3>
+        <div class="chips">
+          <span class="chip">LBO modelling</span><span class="chip">DCF · WACC</span><span class="chip">Financial statement analysis</span>
+          <span class="chip">Credit risk (IFRS 9, PD/LGD/EAD)</span><span class="chip">Fixed income</span><span class="chip">Portfolio theory</span>
+          <span class="chip">Options</span><span class="chip">SABI</span><span class="chip">Bloomberg</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Data &amp; code</h3>
+        <div class="chips">
+          <span class="chip">Python (pandas)</span><span class="chip">SQL</span><span class="chip">SAS</span><span class="chip">Excel · VBA · Power Query</span>
+          <span class="chip">Power BI</span><span class="chip">Spark · Hadoop</span><span class="chip">Clustering · PCA · UMAP</span>
+          <span class="chip">HTML · CSS · JavaScript</span><span class="chip">Git · GitHub Actions</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Languages</h3>
+        <p class="muted">Spanish (native) · English C1 (Cambridge C1 Advanced, TOEFL 97)</p>
+      </div>
+      <div class="card">
+        <h3>Certifications</h3>
+        <p class="muted">Bloomberg Market Concepts · Bloomberg Finance Fundamentals</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>© 2026 Jaime Castillo Colombás · Built as a static page, hosted on GitHub Pages.</footer>
+</main>
+</body>
+</html>
